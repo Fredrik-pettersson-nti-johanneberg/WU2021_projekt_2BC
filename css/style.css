@@ -1,0 +1,260 @@
+body{margin: 0px;}
+/* för dator
+_________________________________________________________________________*/
+@media screen and (min-width: 1024px) {
+    #wrapper{
+        grid-template-areas: 
+        "nv nv nv nv nv"
+        "hd hd hd hd hd"
+        "ma ma ma ma as"
+        "ft ft ft ft ft"
+        ;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 5vh 60vh 50vh 6vh;
+        height: auto;
+        width: 100vw;
+        max-width: 100%;
+        }
+
+
+    .hd1{
+        grid-area: hd;
+        background-color: rgb(255, 50, 50);
+    }
+
+    .mainbilld{
+        height: 100%;
+        width: 100%;
+    }
+
+    #navbar{
+        grid-area: nv;
+        background-color: lightskyblue;
+    }
+
+    
+
+    .lista{ 
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li{
+        flex: 1;
+        float: left;
+    }
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 16px 14px;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color:rgb(86, 86, 255);
+    }
+    li a:hover:not(.active){
+        background-color: rgb(95, 200, 250);
+    }
+    .active{
+        background-color: rgb(86, 86, 255);
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .ma1{
+        grid-area: ma;
+        background-color: rgb(255, 100, 100);
+    }
+
+    .as1{
+        grid-area: as;
+        background-color: rgb(255, 150, 150);
+    }
+
+    .ft{
+        grid-area: ft;
+        background-color: rgb(255, 200, 200);
+    }
+
+
+
+
+
+
+
+
+    .menu{
+        height: 100vh;
+        width: 80vw;
+        background-image: radial-gradient(cyan,rgb(53, 138, 138));
+        position: fixed;
+        top: 0;
+        left: -90vw;
+        transition: left 0.3s;
+        box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+        z-index: 10;
+    }
+    
+    .menu-button{
+        cursor: pointer;
+        display: inline;
+        display: none;
+    }
+    
+    .menu-button i.material-icons{
+        font-size: 2.5rem;
+    }
+    
+    
+    .show{
+        left: 0;
+    }
+    
+    .fade-layer{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        display: none;
+        z-index: 5;
+    }
+    
+    .fade-layer.visible{
+        display: block;
+        display: none;
+    }
+}
+/* För Mobil __________________________________________________________________________________ */
+@media screen and (max-width: 1024px) {
+    #wrapper{
+        grid-template-areas: 
+        "mb mb mb"
+        "hd hd hd"
+        "ma ma as"
+        "ft ft ft"
+        ;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: 6% 70% 60% 8%;
+        height: 100%;
+        width: 100%;
+        max-width: 100%;
+        }
+
+    .hd1{
+        grid-area: hd;
+        background-color: blue;
+    }
+
+    .mainbilld{
+        height: 100%;
+        width: 100%;
+    }
+
+
+    #navbar{
+        grid-area: nv;
+        background-color: lightskyblue;
+        display: none;
+    }
+
+    .menu{
+        height: 100%;
+        width: 80%;
+        background-image: radial-gradient(cyan,rgb(53, 138, 138));
+        position: fixed;
+        top: 0;
+        left: -90vw;
+        transition: left 0.3s;
+        box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
+        z-index: 10;
+    }
+    
+    .menu-button{
+        cursor: pointer;
+        display: inline;
+        grid-area: mb;
+        background-color: blue;
+    }
+    
+    .menu-button i.material-icons{
+        font-size: 2.5rem;
+    }
+    
+    .show{
+        left: 0;
+    }
+    
+    .fade-layer{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background-color: rgba(0,0,0,0.5);
+        display: none;
+        z-index: 5;
+    }
+    
+    .fade-layer.visible{
+        display: block;
+    }
+
+    .lista{ 
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+    }
+
+    li{
+        flex: 1;
+        float: left;
+    }
+    li a {
+        display: block;
+        color: black;
+        text-align: center;
+        padding: 16px 14px;
+        text-decoration: none;
+    }
+    li a:hover {
+        background-color:rgb(86, 86, 255);
+    }
+    li a:hover:not(.active){
+        background-color: rgb(95, 200, 250);
+    }
+    .active{
+        background-color: rgb(86, 86, 255);
+    }
+    .sticky {
+        position: fixed;
+        top: 0;
+        width: 100%;
+    }
+
+    .ma1{
+        grid-area: ma;
+        background-color: rgb(255, 100, 100);
+    }
+
+    .as1{
+        grid-area: as;
+        background-color: rgb(255, 150, 150);
+    }
+
+    .ft{
+        grid-area: ft;
+        background-color: rgb(255, 200, 200);
+    }
+}
+
