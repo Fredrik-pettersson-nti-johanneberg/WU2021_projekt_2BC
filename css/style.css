@@ -1,4 +1,5 @@
 body{margin: 0px;}
+
 /* för dator
 _________________________________________________________________________*/
 @media screen and (min-width: 1024px) {
@@ -11,7 +12,7 @@ _________________________________________________________________________*/
         ;
         display: grid;
         grid-template-columns: repeat(5,1fr);
-        grid-template-rows: 5vh 60vh 50vh 6vh;
+        grid-template-rows: 5vh 60vh auto 6vh;
         height: auto;
         width: 100vw;
         max-width: 100%;
@@ -26,6 +27,7 @@ _________________________________________________________________________*/
     .mainbilld{
         height: 100%;
         width: 100%;
+        padding: 0%;
     }
 
     #navbar{
@@ -33,7 +35,6 @@ _________________________________________________________________________*/
         background-color: lightskyblue;
     }
 
-    
 
     .lista{ 
         list-style-type: none;
@@ -50,8 +51,9 @@ _________________________________________________________________________*/
         display: block;
         color: black;
         text-align: center;
-        padding: 16px 14px;
+        padding: 16px 14px; 
         text-decoration: none;
+        border-color: red;
     }
     li a:hover {
         background-color:rgb(86, 86, 255);
@@ -72,7 +74,30 @@ _________________________________________________________________________*/
         grid-area: ma;
         background-color: rgb(255, 100, 100);
     }
-
+    .sida1_info{
+        color: purple;
+        background-color: powderblue;
+        height: 100%;
+        width: 95%;
+        margin-left: 2% ;
+        padding-top: 2%;
+        padding-bottom: 2%;
+        text-align: center;
+        display: block;
+        
+    }
+    .billder_s1{
+        max-height: 20%;
+    }
+    .sida1_as{
+        color: rebeccapurple;
+        height: 91%;
+        width: 95%;
+        margin-left:2% ;
+        padding-top: 1%;
+        padding-left: 1%;
+        display: block;
+    }
     .as1{
         grid-area: as;
         background-color: rgb(255, 150, 150);
@@ -144,7 +169,7 @@ _________________________________________________________________________*/
         ;
         display: grid;
         grid-template-columns: repeat(3,1fr);
-        grid-template-rows: 6% 70% 60% 8%;
+        grid-template-rows: 8% 70% 60% 8%;
         height: 100%;
         width: 100%;
         max-width: 100%;
@@ -187,7 +212,8 @@ _________________________________________________________________________*/
     }
     
     .menu-button i.material-icons{
-        font-size: 2.5rem;
+        font-size: 2.0rem;
+        padding-left: 1vh;
     }
     
     .show{
