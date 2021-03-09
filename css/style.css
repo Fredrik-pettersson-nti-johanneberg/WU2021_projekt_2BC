@@ -1,9 +1,8 @@
-body{margin: 0px;}
-
+body{margin: 0px; margin: 0px;}
 /* för dator
 _________________________________________________________________________*/
 @media screen and (min-width: 1024px) {
-    #wrapper{
+    #wrapper1{
         grid-template-areas: 
         "nv nv nv nv nv"
         "hd hd hd hd hd"
@@ -12,7 +11,7 @@ _________________________________________________________________________*/
         ;
         display: grid;
         grid-template-columns: repeat(5,1fr);
-        grid-template-rows: 5vh 60vh auto 6vh;
+        grid-template-rows: 5vh 60vh auto auto;
         height: auto;
         width: 100vw;
         max-width: 100%;
@@ -72,25 +71,28 @@ _________________________________________________________________________*/
 
     .ma1{
         grid-area: ma;
-        background-color: rgb(255, 100, 100);
+        background-color: rgb(95, 200, 250);
     }
     .sida1_info{
-        color: purple;
-        background-color: powderblue;
+        color: white;
+        background-color: black;
         height: 100%;
         width: 95%;
         margin-left: 2% ;
         padding-top: 2%;
-        padding-bottom: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
         text-align: center;
         display: block;
-        
+        box-sizing: border-box;
     }
     .billder_s1{
-        max-height: 20%;
+        height: 30%;
+        width: auto;
+
     }
     .sida1_as{
-        color: rebeccapurple;
+        color: black;
         height: 91%;
         width: 95%;
         margin-left:2% ;
@@ -98,22 +100,75 @@ _________________________________________________________________________*/
         padding-left: 1%;
         display: block;
     }
+    .sida2_as{
+        color: black;
+        height: 91%;
+        width: 95%;
+        margin-left:2% ;
+        padding-top: 1%;
+        padding-left: 1%;
+        display: block;
+        display: none;
+    }
+
+    .ma2{
+        grid-area: ma;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        text-align: center;
+    }
+
+    .cash{
+        color: white;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .pris{
+        color: rgb(245, 220, 122);
+    }
+    .times{
+        background-color: cornsilk;
+        color: black;
+        display:block;
+        height: 100%;
+        width: 100%;
+    }
+
+    .ma3{
+        grid-area: ma;
+        background-color: rgb(95, 200, 250);
+        width: 100%;
+    }
+    .allapriser{
+        color: white;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
     .as1{
         grid-area: as;
         background-color: rgb(255, 150, 150);
     }
-
+    .as2{
+        grid-area: as;
+        display: hidden;
+    }
     .ft{
         grid-area: ft;
         background-color: rgb(255, 200, 200);
+        padding-left: 3%;
+        height: 100%;
     }
-
-
-
-
-
-
-
 
     .menu{
         height: 100vh;
@@ -160,17 +215,17 @@ _________________________________________________________________________*/
 }
 /* För Mobil __________________________________________________________________________________ */
 @media screen and (max-width: 1024px) {
-    #wrapper{
+    #wrapper1{
         grid-template-areas: 
-        "mb mb mb"
-        "hd hd hd"
-        "ma ma as"
-        "ft ft ft"
+        "mb mb mb mb"
+        "hd hd hd hd"
+        "ma ma ma ma"
+        "ft ft ft ft"
         ;
         display: grid;
-        grid-template-columns: repeat(3,1fr);
-        grid-template-rows: 8% 70% 60% 8%;
-        height: 100%;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: auto 60vh auto auto;
+        height: auto;
         width: 100%;
         max-width: 100%;
         }
@@ -185,7 +240,7 @@ _________________________________________________________________________*/
         width: 100%;
     }
 
-
+    
     #navbar{
         grid-area: nv;
         background-color: lightskyblue;
@@ -203,7 +258,15 @@ _________________________________________________________________________*/
         box-shadow: 10px 0px 21px -10px rgba(0,0,0,0.75);
         z-index: 10;
     }
-    
+    .menli{
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        display: flex;
+        flex-direction: column;
+    }
+
     .menu-button{
         cursor: pointer;
         display: inline;
@@ -272,8 +335,58 @@ _________________________________________________________________________*/
         grid-area: ma;
         background-color: rgb(255, 100, 100);
     }
+    .sida1_info{
+        color: purple;
+        background-color: powderblue;
+        height: 100%;
+        width: 95%;
+        margin-left: 2% ;
+        padding-top: 2%;
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+        display: block;
+        box-sizing: border-box;
+    }
+    .billder_s1{
+        height:10%;
+        width: auto;
 
+    }
+    .sida1_as{
+        display: none;
+        color: rebeccapurple;
+        height: 91%;
+        width: 95%;
+        margin-left:2% ;
+        padding-top: 1%;
+        padding-left: 1%;
+        display: block;
+    }
+    .ma2{
+        grid-area: ma;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        text-align: center;
+    }
+
+    .cash{
+        color: purple;
+        background-color: powderblue;
+        height: 100%;
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+    }
+    .times{
+        color: purple;
+        display:block;
+        height: 100%;
+        width: 100%;
+    }
     .as1{
+        display: none;
         grid-area: as;
         background-color: rgb(255, 150, 150);
     }
@@ -281,6 +394,9 @@ _________________________________________________________________________*/
     .ft{
         grid-area: ft;
         background-color: rgb(255, 200, 200);
+        padding-left: 3%;
+        padding-top: 10px;
+        height: 100%;
     }
 }
 
