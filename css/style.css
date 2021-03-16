@@ -34,7 +34,20 @@ _________________________________________________________________________*/
         width: 100vw;
         max-width: 100%;
         }
-
+    #wrapper3{
+        grid-template-areas: 
+        "nv nv nv nv nv"
+        "hd hd hd hd hd"
+        "ma ma ma ma ma"
+        "ft ft ft ft ft"
+        ;
+        display: grid;
+        grid-template-columns: repeat(5,1fr);
+        grid-template-rows: 5vh 60vh auto auto;
+        height: auto;
+        width: 100vw;
+        max-width: 100%;
+        }
     .hd1{
         grid-area: hd;
         background-color: rgb(255, 50, 50);
@@ -50,15 +63,17 @@ _________________________________________________________________________*/
         grid-area: nv;
         background-color: lightskyblue;
     }
-
-
     .lista{ 
         list-style-type: none;
         margin: 0;
         padding: 0;
         overflow: hidden;
     }
-
+    .listaicon{
+        height: 50px;
+        
+        float: right;
+    }
     li{
         flex: 1;
         float: left;
@@ -148,10 +163,20 @@ _________________________________________________________________________*/
     }
     .ma3{
         grid-area: ma;
-        background-color: rgb(95, 200, 250);
-        width: 100%;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+    .special{
+        background-color: cornsilk;
+        color: black;
         height: 100%;
-        text-decoration: none;
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        padding-left: 10%;
+        padding-right: 10%;
     }
     .allapriser{
         color: white;
@@ -201,8 +226,6 @@ _________________________________________________________________________*/
     .menu-button i.material-icons{
         font-size: 2.5rem;
     }
-    
-    
     .show{
         left: 0;
     }
@@ -239,7 +262,19 @@ _________________________________________________________________________*/
         width: 100%;
         max-width: 100%;
         }
-
+    #wrapper2{
+        grid-template-areas: 
+        "mb mb mb mb"
+        "hd hd hd hd"
+        "ma ma ma ma"
+        "ft ft ft ft"
+        ;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 5vh 60vh auto auto;
+        height: auto;
+        max-width: 100%;
+        }
     .hd1{
         grid-area: hd;
         background-color: blue;
@@ -359,9 +394,9 @@ _________________________________________________________________________*/
         box-sizing: border-box;
     }
     .billder_s1{
-        height:10%;
-        width: auto;
-
+        max-height: 10px;
+        max-width: 10px;
+        display: none;
     }
     .sida1_as{
         display: none;
@@ -377,7 +412,7 @@ _________________________________________________________________________*/
         grid-area: ma;
         background-color: black;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 100%;
         text-align: center;
     }
 
@@ -394,6 +429,38 @@ _________________________________________________________________________*/
         display:block;
         height: 100%;
         width: 100%;
+    }
+    .ma3{
+        grid-area: ma;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 100%;
+        text-align: center;
+    }
+    .special{
+        background-color: cornsilk;
+        color: black;
+        height: 100%;
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        padding-left: 10%;
+        padding-right: 10%;
+    }
+    .allapriser{
+        color: white;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        text-align: center;
+        
+    }
+    .prislista{
+        display: flex;
+        flex-direction: column;
+        line-height: 4vh;
     }
     .as1{
         display: none;
