@@ -39,6 +39,7 @@ _________________________________________________________________________*/
         "nv nv nv nv nv"
         "hd hd hd hd hd"
         "ma ma ma ma ma"
+        "ma ma ma ma ma"
         "ft ft ft ft ft"
         ;
         display: grid;
@@ -193,14 +194,35 @@ _________________________________________________________________________*/
         flex-direction: column;
         line-height: 4vh;
     }
+    .ma4{
+        grid-area: ma;
+        background-color: black;
+        display: grid;
+        grid-template-columns: 50% 50%;
+        text-align: center;
+    }
+    .sida4ma{
+        color: white;
+        background-color: black;
+        height: 100%;
+        width: 100%;
+        display: block;
+        box-sizing: border-box;
+        text-align: center;
+    }
+    
+
     .as1{
         grid-area: as;
-        background-color: rgb(255, 150, 150);
+        background-color: lightblue;
+        display: block;
+        border: black solid 5px;
     }
 
     .ft{
         grid-area: ft;
-        background-color: rgb(255, 200, 200);
+        background-color: lightblue;
+        display: block;
         padding-left: 3%;
         height: 100%;
     }
@@ -378,11 +400,11 @@ _________________________________________________________________________*/
 
     .ma1{
         grid-area: ma;
-        background-color: rgb(255, 100, 100);
+        background-color: rgb(95, 200, 250);
     }
     .sida1_info{
-        color: purple;
-        background-color: powderblue;
+        color: white;
+        background-color: black;
         height: 100%;
         width: 95%;
         margin-left: 2% ;
@@ -394,13 +416,12 @@ _________________________________________________________________________*/
         box-sizing: border-box;
     }
     .billder_s1{
-        max-height: 10px;
-        max-width: 10px;
-        display: none;
+        height: 30%;
+        width: auto;
+
     }
     .sida1_as{
-        display: none;
-        color: rebeccapurple;
+        color: black;
         height: 91%;
         width: 95%;
         margin-left:2% ;
@@ -417,16 +438,17 @@ _________________________________________________________________________*/
     }
 
     .cash{
-        color: purple;
-        background-color: powderblue;
+        color: cornsilk;
+        background-color: black;
         height: 100%;
         width: 100%;
         display: block;
         box-sizing: border-box;
     }
     .times{
-        color: purple;
+        color: black;
         display:block;
+        background-color: cornsilk;
         height: 100%;
         width: 100%;
     }
@@ -470,7 +492,8 @@ _________________________________________________________________________*/
 
     .ft{
         grid-area: ft;
-        background-color: rgb(255, 200, 200);
+        background-color: lightblue;
+        display: block;
         padding-left: 3%;
         padding-top: 10px;
         height: 100%;
