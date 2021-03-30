@@ -15,7 +15,7 @@ _________________________________________________________________________*/
         ;
         display: grid;
         grid-template-columns: repeat(5,1fr);
-        grid-template-rows: 5vh 60vh auto auto;
+        grid-template-rows: 5vh 80vh auto auto;
         height: auto;
         width: 100vw;
         max-width: 100%;
@@ -29,7 +29,7 @@ _________________________________________________________________________*/
         ;
         display: grid;
         grid-template-columns: repeat(5,1fr);
-        grid-template-rows: 5vh 60vh auto auto;
+        grid-template-rows: 5vh 80vh auto auto;
         height: auto;
         width: 100vw;
         max-width: 100%;
@@ -44,7 +44,7 @@ _________________________________________________________________________*/
         ;
         display: grid;
         grid-template-columns: repeat(5,1fr);
-        grid-template-rows: 5vh 60vh auto auto;
+        grid-template-rows: 5vh 80vh auto auto;
         height: auto;
         width: 100vw;
         max-width: 100%;
