@@ -389,7 +389,7 @@ _________________________________________________________________________*/
         ;
         display: grid;
         grid-template-columns: repeat(4,1fr);
-        grid-template-rows: auto 60vh auto auto;
+        grid-template-rows: auto auto auto auto;
         height: auto;
         width: 100%;
         max-width: 100%;
