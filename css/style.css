@@ -1,8 +1,12 @@
-body{margin: 0px; margin: 0px;}
+* {
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+body{ margin: 0%; padding: 0%;}
 ul {
     list-style-type: none;
     padding: 0px;
-  }
+  }  
 /* för dator
 _________________________________________________________________________*/
 @media screen and (min-width: 1024px) {
@@ -15,7 +19,7 @@ _________________________________________________________________________*/
         ;
         display: grid;
         grid-template-columns: repeat(5,1fr);
-        grid-template-rows: 5vh 80vh auto auto;
+        grid-template-rows: 5vh 85vh auto auto;
         height: auto;
         width: 100vw;
         max-width: 100%;
@@ -29,7 +33,7 @@ _________________________________________________________________________*/
         ;
         display: grid;
         grid-template-columns: repeat(5,1fr);
-        grid-template-rows: 5vh 80vh auto auto;
+        grid-template-rows: 5vh 85vh auto auto;
         height: auto;
         width: 100vw;
         max-width: 100%;
@@ -38,13 +42,13 @@ _________________________________________________________________________*/
         grid-template-areas: 
         "nv nv nv nv nv"
         "hd hd hd hd hd"
-        "ma ma ma ma ma"
-        "ma ma ma ma ma"
+        "ma ma ma ma as"
+        "ma ma ma ma as"
         "ft ft ft ft ft"
         ;
         display: grid;
         grid-template-columns: repeat(5,1fr);
-        grid-template-rows: 5vh 80vh auto auto;
+        grid-template-rows: 5vh 85vh auto auto;
         height: auto;
         width: 100vw;
         max-width: 100%;
@@ -55,9 +59,9 @@ _________________________________________________________________________*/
     }
 
     .mainbilld{
-        height: 100%;
+        height: auto;
         width: 100%;
-        padding: 0%;
+        /* padding: 0% 10% 0% 10%; */
     }
 
     #navbar{
@@ -72,46 +76,47 @@ _________________________________________________________________________*/
     }
     .listaicon{
         height: 50px;
-        
         float: right;
     }
-    li{
+    .hotbare{
         flex: 1;
         float: left;
     }
-    li a {
+    .hotbare a {
         display: block;
-        color: black;
         text-align: center;
         padding: 16px 14px; 
         text-decoration: none;
-        border-color: red;
+        color: black;
     }
-    li a:hover {
-        background-color:rgb(86, 86, 255);
+    .hotbare a:hover {
+        background-color: rgb(2, 2, 73);
     }
-    li a:hover:not(.active){
+    .hotbare a:hover:not(.active){
         background-color: rgb(95, 200, 250);
     }
-    .active{
-        background-color: rgb(86, 86, 255);
+    #active{
+        background-color: rgb(9, 9, 146);
+        color: whitesmoke;
     }
     .sticky {
         position: fixed;
         top: 0;
         width: 100%;
-    }
-
+    }   
     .ma1{
         grid-area: ma;
-        background-color: rgb(95, 200, 250);
+        background-color:wheat;
+    }
+    .sida1_h2{
+        line-height: 4rem;
     }
     .sida1_info{
-        color: white;
+        color: wheat;
         background-color: black;
         height: 100%;
         width: 95%;
-        margin-left: 2% ;
+        margin-left: 2%;
         padding-top: 2%;
         padding-left: 5%;
         padding-right: 5%;
@@ -120,7 +125,7 @@ _________________________________________________________________________*/
         box-sizing: border-box;
     }
     .billder_s1{
-        height: 30%;
+        height: 20%;
         width: auto;
 
     }
@@ -196,35 +201,93 @@ _________________________________________________________________________*/
     }
     .ma4{
         grid-area: ma;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: wheat;
+        background-color: black;
+        border: wheat solid 5px;
+        
+    }
+    .sida4bild {
+        height: 400px;
+        width: auto;
+        margin: 30px 15px 30px 30px;
+        border: wheat solid 5px;
+    }
+    .sida4div1 {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-around;
+        margin: 30px 60px 15px 30px;
+    }
+    .sida4div2 {
+        display: flex;
+        flex-direction: row-reverse;
+        align-items: center;
+        justify-content: space-around;
+        margin: 30px 60px 15px 30px;
+    }
+    .ma5{
+        grid-area: ma;
         background-color: black;
         display: grid;
-        grid-template-columns: 50% 50%;
+        grid-template-columns: 25% 25% 25% 25%;
         text-align: center;
+        padding: 5% 5% 5% 5%;
+        }
+    .info5_1{
+        display: block;
+        background-color: red;
+        border: wheat solid 5px;
     }
-    .sida4ma{
-        color: white;
-        background-color: black;
+    .info5_2{
+        display: block;
+        background-color: red;
+        border: wheat solid 5px;
+    }
+    .info5_3{
+        display: block;
+        background-color: red;
+        border: wheat solid 5px;
+    }
+    .info5_4{
+        display: block;
+        background-color: red;
+        border: wheat solid 5px;
+    }
+    .pris{
+        color: rgb(245, 220, 122);
+    }
+    .times{
+        background-color: cornsilk;
+        color: black;
+        display:block;
         height: 100%;
         width: 100%;
-        display: block;
-        box-sizing: border-box;
-        text-align: center;
+    }    
+    .sida5_main{
+        color:rebeccapurple ;
     }
-    
-
     .as1{
         grid-area: as;
         background-color: lightblue;
-        display: block;
         border: black solid 5px;
     }
 
     .ft{
         grid-area: ft;
-        background-color: lightblue;
+        background-color: lightskyblue;
         display: block;
         padding-left: 3%;
         height: 100%;
+    }
+    .ft > h3{
+        line-height: 7rem;
+    }
+    .ft > h4{
+        line-height: 2rem;
     }
 
     .menu{
@@ -297,6 +360,19 @@ _________________________________________________________________________*/
         height: auto;
         max-width: 100%;
         }
+    #wrapper3{
+        grid-template-areas: 
+        "mb mb mb mb"
+        "hd hd hd hd"
+        "ma ma ma ma"
+        "ft ft ft ft"
+        ;
+        display: grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-template-rows: 5vh 60vh auto auto;
+        height: auto;
+        max-width: 100%;
+        }
     .hd1{
         grid-area: hd;
         background-color: blue;
@@ -307,7 +383,6 @@ _________________________________________________________________________*/
         width: 100%;
     }
 
-    
     #navbar{
         grid-area: nv;
         background-color: lightskyblue;
@@ -338,7 +413,9 @@ _________________________________________________________________________*/
         cursor: pointer;
         display: inline;
         grid-area: mb;
-        background-color: blue;
+        background-color: skyblue;
+        position: fixed;
+        width: 100%;
     }
     
     .menu-button i.material-icons{
@@ -390,7 +467,8 @@ _________________________________________________________________________*/
         background-color: rgb(95, 200, 250);
     }
     .active{
-        background-color: rgb(86, 86, 255);
+        background-color: blue;
+        color: whitesmoke;
     }
     .sticky {
         position: fixed;
@@ -452,6 +530,7 @@ _________________________________________________________________________*/
         height: 100%;
         width: 100%;
     }
+    
     .ma3{
         grid-area: ma;
         background-color: black;
@@ -484,6 +563,34 @@ _________________________________________________________________________*/
         flex-direction: column;
         line-height: 4vh;
     }
+    .ma4{
+        grid-area: ma;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        color: wheat;
+        background-color: black;
+        border: wheat solid 5px;
+        }
+    .sida4bild {
+        height: 60vw;
+        width: auto;
+        margin: 30px 30px 30px 60px;
+    }
+    .sida4div1 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+        margin: 30px 60px 15px 30px;
+    }
+    .sida4div2 {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: space-around;
+        margin: 30px 60px 15px 30px;
+    }
     .as1{
         display: none;
         grid-area: as;
@@ -492,11 +599,16 @@ _________________________________________________________________________*/
 
     .ft{
         grid-area: ft;
-        background-color: lightblue;
+        background-color: lightskyblue;
         display: block;
         padding-left: 3%;
-        padding-top: 10px;
         height: 100%;
+    }
+    .ft > h3{
+        line-height: 7rem;
+    }
+    .ft > h4{
+        line-height: 2rem;
     }
 }
 
