@@ -7,11 +7,11 @@ ul {
     list-style-type: none;
     padding: 0px;
   }  
-/* för dator
+/* for dator
 _________________________________________________________________________*/
 @media screen and (min-width: 1024px) {
     #wrapper1{
-        grid-template-areas: 
+        grid-template-areas:
         "nv nv nv nv nv"
         "hd hd hd hd hd"
         "ma ma ma ma as"
@@ -19,7 +19,7 @@ _________________________________________________________________________*/
         ;
         display: grid;
         grid-template-columns: repeat(5,1fr);
-        grid-template-rows: 5vh 85vh auto auto;
+        grid-template-rows: 50px 85vh auto auto;
         height: auto;
         width: 100vw;
         max-width: 100%;
@@ -33,7 +33,7 @@ _________________________________________________________________________*/
         ;
         display: grid;
         grid-template-columns: repeat(5,1fr);
-        grid-template-rows: 5vh 85vh auto auto;
+        grid-template-rows: 50px 85vh auto auto;
         height: auto;
         width: 100vw;
         max-width: 100%;
@@ -48,7 +48,7 @@ _________________________________________________________________________*/
         ;
         display: grid;
         grid-template-columns: repeat(5,1fr);
-        grid-template-rows: 5vh 85vh auto auto;
+        grid-template-rows: 50px 85vh auto auto;
         height: auto;
         width: 100vw;
         max-width: 100%;
@@ -61,7 +61,6 @@ _________________________________________________________________________*/
     .mainbilld{
         height: auto;
         width: 100%;
-        /* padding: 0% 10% 0% 10%; */
     }
 
     #navbar{
@@ -73,9 +72,11 @@ _________________________________________________________________________*/
         margin: 0;
         padding: 0;
         overflow: hidden;
+        letter-spacing: 0.15rem;
     }
     .listaicon{
         height: 50px;
+        width: auto;
         float: right;
     }
     .hotbare{
@@ -103,13 +104,35 @@ _________________________________________________________________________*/
         position: fixed;
         top: 0;
         width: 100%;
-    }   
+    }  
+    
+    /*_____p-grabbarna____*/
+    .p1{
+        color: whitesmoke;
+        font-size: 2rem;
+    }
+    .p21{
+        color: whitesmoke;
+        font-size: 2rem;
+    }
+    .p22{
+        
+        font-size: 2rem;
+    }
+    .p3{
+        color: black;
+        font-size: 2rem;
+    }
+    .p4{
+        color: aqua;
+    }
+    .p5{
+        font-size: 1.5rem;
+    }
+    /*____________*/
     .ma1{
         grid-area: ma;
-        background-color:wheat;
-    }
-    .sida1_h2{
-        line-height: 4rem;
+        background-color:whitesmoke;
     }
     .sida1_info{
         color: wheat;
@@ -120,6 +143,7 @@ _________________________________________________________________________*/
         padding-top: 2%;
         padding-left: 5%;
         padding-right: 5%;
+        margin-top: 3%;
         text-align: center;
         display: block;
         box-sizing: border-box;
@@ -127,7 +151,6 @@ _________________________________________________________________________*/
     .billder_s1{
         height: 20%;
         width: auto;
-
     }
     .sida1_as{
         color: black;
@@ -197,7 +220,8 @@ _________________________________________________________________________*/
     .prislista{
         display: flex;
         flex-direction: column;
-        line-height: 4vh;
+        line-height: 2rem;
+        padding: 0% 5% 2.5% 5%;
     }
     .ma4{
         grid-area: ma;
@@ -239,23 +263,27 @@ _________________________________________________________________________*/
         }
     .info5_1{
         display: block;
-        background-color: red;
+        background-color: rgb(20, 20, 20);
         border: wheat solid 5px;
+        color: whitesmoke;
     }
     .info5_2{
         display: block;
-        background-color: red;
+        background-color: rgb(30, 30, 30);
         border: wheat solid 5px;
+        color: whitesmoke;
     }
     .info5_3{
         display: block;
-        background-color: red;
+        background-color: rgb(40, 40, 40);
         border: wheat solid 5px;
+        color: whitesmoke;
     }
     .info5_4{
         display: block;
-        background-color: red;
+        background-color: rgb(50, 50, 50);
         border: wheat solid 5px;
+        color: whitesmoke;
     }
     .pris{
         color: rgb(245, 220, 122);
@@ -271,11 +299,30 @@ _________________________________________________________________________*/
         color:rebeccapurple ;
     }
     .as1{
+        padding-top: 10px;
         grid-area: as;
         background-color: lightblue;
         border: black solid 5px;
     }
-
+    .astext{
+        line-height: 2rem;
+        letter-spacing: 0rem;
+        font-size: 1.5rem;
+    }
+    .ft1{
+        grid-area: ft;
+        background-color: lightskyblue;
+        display: block;
+        padding-left: 3%;
+        height: 100%;
+        margin-top: 5%;
+    }
+    .ft1 > h3{
+        line-height: 7rem;
+    }
+    .ft1 > h4{
+        line-height: 2rem;
+    }
     .ft{
         grid-area: ft;
         background-color: lightskyblue;
@@ -331,7 +378,7 @@ _________________________________________________________________________*/
         display: none;
     }
 }
-/* För Mobil __________________________________________________________________________________ */
+/* For Mobil __________________________________________________________________________________ */
 @media screen and (max-width: 1024px) {
     #wrapper1{
         grid-template-areas: 
@@ -475,7 +522,31 @@ _________________________________________________________________________*/
         top: 0;
         width: 100%;
     }
-
+    /*_____p-grabbarna____*/
+    .p1{
+        color: whitesmoke;
+        font-size: 1rem;
+    }
+    .p21{
+        color: whitesmoke;
+        font-size: 1.5rem;
+        line-height: 2rem;
+    }
+    .p22{
+        
+        font-size: 2rem;
+    }
+    .p3{
+        color: black;
+        font-size: 2rem;
+    }
+    .p4{
+        color: aqua;
+    }
+    .p5{
+        font-size: 1.5rem;
+    }
+    /*____________*/
     .ma1{
         grid-area: ma;
         background-color: rgb(95, 200, 250);
@@ -485,8 +556,10 @@ _________________________________________________________________________*/
         background-color: black;
         height: 100%;
         width: 95%;
-        margin-left: 2% ;
+        margin-left: 2%;
         padding-top: 2%;
+        margin-bottom: 2%;
+        margin-top: 2%;
         padding-left: 5%;
         padding-right: 5%;
         text-align: center;
@@ -494,9 +567,8 @@ _________________________________________________________________________*/
         box-sizing: border-box;
     }
     .billder_s1{
-        height: 30%;
-        width: auto;
-
+        height: 100px;
+        width: 100px;
     }
     .sida1_as{
         color: black;
@@ -514,7 +586,6 @@ _________________________________________________________________________*/
         grid-template-columns: 100%;
         text-align: center;
     }
-
     .cash{
         color: cornsilk;
         background-color: black;
@@ -522,6 +593,7 @@ _________________________________________________________________________*/
         width: 100%;
         display: block;
         box-sizing: border-box;
+        padding: 10px;
     }
     .times{
         color: black;
@@ -529,6 +601,7 @@ _________________________________________________________________________*/
         background-color: cornsilk;
         height: 100%;
         width: 100%;
+        padding: 10px;
     }
     
     .ma3{
@@ -545,8 +618,8 @@ _________________________________________________________________________*/
         width: 100%;
         display: block;
         box-sizing: border-box;
-        padding-left: 10%;
-        padding-right: 10%;
+        padding-left: 5%;
+        padding-right: 5%;
     }
     .allapriser{
         color: white;
@@ -556,7 +629,7 @@ _________________________________________________________________________*/
         display: block;
         box-sizing: border-box;
         text-align: center;
-        
+        padding: 5%;
     }
     .prislista{
         display: flex;
@@ -575,21 +648,66 @@ _________________________________________________________________________*/
     .sida4bild {
         height: 60vw;
         width: auto;
-        margin: 30px 30px 30px 60px;
+        margin: 30px 30px 30px 30px;
     }
     .sida4div1 {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-around;
-        margin: 30px 60px 15px 30px;
+        margin: 30px 30px 30px 30px;
     }
     .sida4div2 {
         display: flex;
         flex-direction: column-reverse;
         align-items: center;
         justify-content: space-around;
-        margin: 30px 60px 15px 30px;
+        margin: 30px 30px 30px 30px;
+    }
+    .ma5{
+        grid-area: ma;
+        background-color: black;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        padding: 5% 5% 5% 5%;
+        }
+    .info5_1{
+        display: block;
+        background-color: rgb(20, 20, 20);
+        border: wheat solid 5px;
+        color: whitesmoke;
+    }
+    .info5_2{
+        display: block;
+        background-color: rgb(30, 30, 30);
+        border: wheat solid 5px;
+        color: whitesmoke;
+    }
+    .info5_3{
+        display: block;
+        background-color: rgb(40, 40, 40);
+        border: wheat solid 5px;
+        color: whitesmoke;
+    }
+    .info5_4{
+        display: block;
+        background-color: rgb(50, 50, 50);
+        border: wheat solid 5px;
+        color: whitesmoke;
+    }
+    .pris{
+        color: rgb(245, 220, 122);
+    }
+    .times{
+        background-color: cornsilk;
+        color: black;
+        display:block;
+        height: 100%;
+        width: 100%;
+    }    
+    .sida5_main{
+        color:rebeccapurple ;
     }
     .as1{
         display: none;
@@ -608,6 +726,19 @@ _________________________________________________________________________*/
         line-height: 7rem;
     }
     .ft > h4{
+        line-height: 2rem;
+    }
+    .ft1{
+        grid-area: ft;
+        background-color: lightskyblue;
+        display: block;
+        padding-left: 3%;
+        height: 100%;
+    }
+    .ft1 > h3{
+        line-height: 7rem;
+    }
+    .ft1 > h4{
         line-height: 2rem;
     }
 }
